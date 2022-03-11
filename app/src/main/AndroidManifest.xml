@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.grievingcat.spanel">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SMART PANEL"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Spanel">
+
+        <activity
+            android:name=".Socket4Activity"
+            android:exported="false"
+            android:label="SOCKET : 4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Socket3Activity"
+            android:exported="false"
+            android:label="SOCKET : 3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Socket2Activity"
+            android:exported="false"
+            android:label="SOCKET : 2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Socket1Activity"
+            android:exported="false"
+            android:label="SOCKET : 1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

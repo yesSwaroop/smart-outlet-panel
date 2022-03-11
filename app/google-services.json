@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "350423636761",
+    "firebase_url": "https://spanel-fe94c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "spanel-fe94c",
+    "storage_bucket": "spanel-fe94c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350423636761:android:eb792c360cd655d3364388",
+        "android_client_info": {
+          "package_name": "com.grievingcat.spanel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350423636761-83h2e5ju5kg4no13jtalogvbklkg9dnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUrg6zX9_GRwxXe2DMKf0SE3C170mpaPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350423636761-83h2e5ju5kg4no13jtalogvbklkg9dnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

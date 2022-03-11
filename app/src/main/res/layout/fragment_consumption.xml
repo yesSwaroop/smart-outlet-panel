@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background2"
+    android:clipChildren="false"
+    tools:context=".fragments.ConsumptionFragment">
+
+    <Button
+        android:id="@+id/updcons"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#02A192"
+        android:fontFamily="@font/verdana_bold"
+        android:text="UPDATE"
+        android:textSize="10dp"
+        android:textColor="#38FF00"
+        app:layout_constraintBottom_toBottomOf="@+id/consv"
+        app:layout_constraintEnd_toEndOf="@+id/consv"
+        app:layout_constraintStart_toStartOf="@+id/consv"
+        app:rippleColor="#F866FD" />
+
+    <Button
+        android:id="@+id/updconn"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#02A192"
+        android:fontFamily="@font/verdana_bold"
+        android:text="UPDATE"
+        android:textSize="10dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="#38FF00"
+        app:layout_constraintBottom_toBottomOf="@+id/connv"
+        app:layout_constraintEnd_toEndOf="@+id/connv"
+        app:layout_constraintStart_toStartOf="@+id/connv"
+        app:rippleColor="#F866FD" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.qhutch.elevationimageview.ElevationImageView
+        android:id="@+id/imageView2"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:elevation="50dp"
+        android:src="@drawable/ic_big"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="₹"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintStart_toEndOf="@+id/textView39"
+        app:layout_constraintTop_toTopOf="@+id/textView39"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/costm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:fontFamily="@font/ubuntu_mono_regular"
+        android:text="0000"
+        android:textColor="#FFE607"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView47"
+        app:layout_constraintStart_toEndOf="@+id/textView47"
+        app:layout_constraintTop_toTopOf="@+id/textView47" />
+
+    <TextView
+        android:id="@+id/costd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:fontFamily="@font/ubuntu_mono_regular"
+        android:text="0000"
+        android:textColor="#FFE607"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView45"
+        app:layout_constraintStart_toEndOf="@+id/textView45"
+        app:layout_constraintTop_toTopOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="₹"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintStart_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="₹"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView41"
+        app:layout_constraintStart_toEndOf="@+id/textView41"
+        app:layout_constraintTop_toTopOf="@+id/textView41" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="COST PER UNIT:"
+        android:textColor="#FBBD03"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+    <com.qhutch.elevationimageview.ElevationImageView
+        android:id="@+id/consv"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="50dp"
+        android:src="@drawable/ic_small"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="FOR MONTH"
+        android:textColor="#EA3D78"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/consv"
+        app:layout_constraintEnd_toEndOf="@+id/consv"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="@+id/consv"
+        app:layout_constraintTop_toBottomOf="@+id/consumpd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/ubuntu_mono_regular"
+        android:text="kWh"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/consumpm"
+        app:layout_constraintEnd_toEndOf="@+id/consv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/consumpm"
+        app:layout_constraintTop_toTopOf="@+id/consumpm"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="FOR MONTH"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/consv"
+        app:layout_constraintEnd_toEndOf="@+id/consv"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="@+id/consv"
+        app:layout_constraintTop_toBottomOf="@+id/consumpd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="MONTH'S COST:"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView41"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="TODAY'S COST:"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView41"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/consumpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/ubuntu_mono_regular"
+        android:text="00000000"
+        android:textColor="#FFE607"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/consv"
+        app:layout_constraintStart_toStartOf="@+id/consv"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.qhutch.elevationimageview.ElevationImageView
+        android:id="@+id/connv"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="50dp"
+        android:src="@drawable/ic_small"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="FOR MONTH"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/connv"
+        app:layout_constraintEnd_toEndOf="@+id/connv"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/connv"
+        app:layout_constraintTop_toBottomOf="@+id/connecd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/connecm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_mono_regular"
+        android:text="0000"
+        android:textColor="#FFE607"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/consv"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView36"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="FOR TODAY"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/consv"
+        app:layout_constraintEnd_toEndOf="@+id/consv"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="@+id/consv"
+        app:layout_constraintTop_toTopOf="@+id/consv"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <TextView
+        android:id="@+id/connecd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_mono_regular"
+        android:text="0000"
+        android:textColor="#FFE607"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/consv"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/verdana_bold"
+        android:text="CONNECTIONS"
+        android:textColor="#AFFBF2"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/connv"
+        app:layout_constraintEnd_toEndOf="@+id/connv"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/connv"
+        app:layout_constraintTop_toTopOf="@+id/connv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/verdana_bold"
+        android:text="EXPENDITURE"
+        android:textColor="#AFFBF2"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/verdana_bold"
+        android:text="CONSUMPTION"
+        android:textColor="#AFFBF2"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/consv"
+        app:layout_constraintEnd_toEndOf="@+id/consv"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/consv"
+        app:layout_constraintTop_toTopOf="@+id/consv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/calccost"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#029386"
+        android:fontFamily="@font/verdana_bold"
+        android:text="CALCULATE"
+        android:textColor="#38FF00"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0"
+        app:rippleColor="#F866FD" />
+
+    <TextView
+        android:id="@+id/consumpd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/ubuntu_mono_regular"
+        android:text="00000000"
+        android:textColor="#FFE607"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/consv"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/ubuntu_mono_regular"
+        android:text="kWh"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/consumpd"
+        app:layout_constraintEnd_toEndOf="@+id/consv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/consumpd"
+        app:layout_constraintTop_toTopOf="@+id/consumpd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="FOR TODAY"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/connv"
+        app:layout_constraintEnd_toEndOf="@+id/connv"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/connv"
+        app:layout_constraintTop_toTopOf="@+id/connv"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <EditText
+        android:id="@+id/cost"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F451FA"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu_mono_regular"
+        android:inputType="numberDecimal"
+        android:text="00"
+        android:textColor="#3EF7FD"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView46"
+        app:layout_constraintStart_toEndOf="@+id/textView46" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
